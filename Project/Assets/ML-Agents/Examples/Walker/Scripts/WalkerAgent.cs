@@ -10,10 +10,10 @@ using Random = UnityEngine.Random;
 public class WalkerAgent : Agent
 {
     [Header("Walk Speed")]
-    [Range(0.1f, 10)]
+    [Range(100f, 100f)]
     [SerializeField]
     //The walking speed to try and achieve
-    private float m_TargetWalkingSpeed = 10;
+    private float m_TargetWalkingSpeed = 100;
 
     public float MTargetWalkingSpeed // property
     {
@@ -21,7 +21,7 @@ public class WalkerAgent : Agent
         set { m_TargetWalkingSpeed = Mathf.Clamp(value, .1f, m_maxWalkingSpeed); }
     }
 
-    const float m_maxWalkingSpeed = 10; //The max walking speed
+    const float m_maxWalkingSpeed = 100; //The max walking speed
 
     //Should the agent sample a new goal velocity each episode?
     //If true, walkSpeed will be randomly set between zero and m_maxWalkingSpeed in OnEpisodeBegin()
@@ -100,13 +100,13 @@ public class WalkerAgent : Agent
         }
 
         //Random start rotation to help generalize
-        hips.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+        hips.rotation = Quaternion.Euler(0, 0, 0);
 
         UpdateOrientationObjects();
 
         //Set our goal walking speed
         MTargetWalkingSpeed =
-            randomizeWalkSpeedEachEpisode ? Random.Range(0.1f, m_maxWalkingSpeed) : MTargetWalkingSpeed;
+            randomizeWalkSpeedEachEpisode ? Random.Range(100f, m_maxWalkingSpeed) : MTargetWalkingSpeed;
 
         SetResetParameters();
     }
@@ -253,6 +253,12 @@ public class WalkerAgent : Agent
         }
 
         AddReward(matchSpeedReward * lookAtTargetReward);
+
+        // If the agent falls under y = 0, end episode
+        if (hips.position.y < 0)
+        {
+            EndEpisode();
+        }
     }
 
     //Returns the average velocity of all of the body parts
