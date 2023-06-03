@@ -1,0 +1,65 @@
+{
+    "Walker": {
+        "checkpoints": [
+            {
+                "steps": 26499859,
+                "file_path": "results\\Obstacle0.2\\Walker\\Walker-26499859.onnx",
+                "reward": 24.116219464370182,
+                "creation_time": 1685778519.1244276,
+                "auxillary_file_paths": [
+                    "results\\Obstacle0.2\\Walker\\Walker-26499859.pt"
+                ]
+            },
+            {
+                "steps": 26999962,
+                "file_path": "results\\Obstacle0.2\\Walker\\Walker-26999962.onnx",
+                "reward": 18.896614036908964,
+                "creation_time": 1685779050.8862653,
+                "auxillary_file_paths": [
+                    "results\\Obstacle0.2\\Walker\\Walker-26999962.pt"
+                ]
+            },
+            {
+                "steps": 27499880,
+                "file_path": "results\\Obstacle0.2\\Walker\\Walker-27499880.onnx",
+                "reward": 19.52768963192581,
+                "creation_time": 1685779584.864444,
+                "auxillary_file_paths": [
+                    "results\\Obstacle0.2\\Walker\\Walker-27499880.pt"
+                ]
+            },
+            {
+                "steps": 27999966,
+                "file_path": "results\\Obstacle0.2\\Walker\\Walker-27999966.onnx",
+                "reward": 19.098707417647045,
+                "creation_time": 1685780118.5371473,
+                "auxillary_file_paths": [
+                    "results\\Obstacle0.2\\Walker\\Walker-27999966.pt"
+                ]
+            },
+            {
+                "steps": 28464103,
+                "file_path": "results\\Obstacle0.2\\Walker\\Walker-28464103.onnx",
+                "reward": 22.19276170094808,
+                "creation_time": 1685780643.7848375,
+                "auxillary_file_paths": [
+                    "results\\Obstacle0.2\\Walker\\Walker-28464103.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 28464103,
+            "file_path": "results\\Obstacle0.2\\Walker.onnx",
+            "reward": 22.19276170094808,
+            "creation_time": 1685780643.7848375,
+            "auxillary_file_paths": [
+                "results\\Obstacle0.2\\Walker\\Walker-28464103.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cu117"
+    }
+}
