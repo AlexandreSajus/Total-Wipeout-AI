@@ -1,6 +1,7 @@
 # Output Artifacts (Legacy)
 /models
 /summaries
+results/
 
 # Output Builds
 /Builds
@@ -94,3 +95,6 @@ coverage.xml
 /htmlcov/
 
 **/UserSettings/*
+
+# Assets
+Project/Assets/PolygonPrototype

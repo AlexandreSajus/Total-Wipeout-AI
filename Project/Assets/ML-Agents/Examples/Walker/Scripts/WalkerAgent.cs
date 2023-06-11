@@ -50,6 +50,9 @@ public class WalkerAgent : Agent
     public Transform forearmR;
     public Transform handR;
 
+    public float initial_x;
+    public float previous_z;
+
     //This will be used as a stabilized model space reference point for observations
     //Because ragdolls can move erratically during training, using a stabilized reference transform improves learning
     OrientationCubeController m_OrientationCube;
@@ -101,6 +104,9 @@ public class WalkerAgent : Agent
 
         //Random start rotation to help generalize
         hips.rotation = Quaternion.Euler(0, 0, 0);
+
+        initial_x = hips.position.x;
+        previous_z = hips.position.z;
 
         UpdateOrientationObjects();
 
@@ -220,6 +226,12 @@ public class WalkerAgent : Agent
     {
         UpdateOrientationObjects();
 
+        // If r is pressed, reset the agent
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            EndEpisode();
+        }
+
         var cubeForward = m_OrientationCube.transform.forward;
 
         // Set reward for this step according to mixture of the following elements.
@@ -253,6 +265,7 @@ public class WalkerAgent : Agent
         }
 
         AddReward(matchSpeedReward * lookAtTargetReward);
+        AddReward(-Math.Abs(hips.position.x - initial_x) / 10f);
 
         // If the agent falls under y = 0, end episode
         if (hips.position.y < 0)

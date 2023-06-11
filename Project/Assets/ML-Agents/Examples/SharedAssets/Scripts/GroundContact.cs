@@ -34,7 +34,7 @@ namespace Unity.MLAgentsExamples
 
                 if (agentDoneOnGroundContact)
                 {
-                    agent.EndEpisode();
+                    //agent.EndEpisode();
                 }
             }
         }

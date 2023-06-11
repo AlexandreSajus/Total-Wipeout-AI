@@ -2,58 +2,58 @@
     "Walker": {
         "checkpoints": [
             {
-                "steps": 26499859,
-                "file_path": "results\\Obstacle0.2\\Walker\\Walker-26499859.onnx",
-                "reward": 24.116219464370182,
-                "creation_time": 1685778519.1244276,
+                "steps": 45999995,
+                "file_path": "results\\Obstacle0.2\\Walker\\Walker-45999995.onnx",
+                "reward": 23.71833833058675,
+                "creation_time": 1685935215.135156,
                 "auxillary_file_paths": [
-                    "results\\Obstacle0.2\\Walker\\Walker-26499859.pt"
+                    "results\\Obstacle0.2\\Walker\\Walker-45999995.pt"
                 ]
             },
             {
-                "steps": 26999962,
-                "file_path": "results\\Obstacle0.2\\Walker\\Walker-26999962.onnx",
-                "reward": 18.896614036908964,
-                "creation_time": 1685779050.8862653,
+                "steps": 46499967,
+                "file_path": "results\\Obstacle0.2\\Walker\\Walker-46499967.onnx",
+                "reward": 23.331831590229314,
+                "creation_time": 1685935786.4873648,
                 "auxillary_file_paths": [
-                    "results\\Obstacle0.2\\Walker\\Walker-26999962.pt"
+                    "results\\Obstacle0.2\\Walker\\Walker-46499967.pt"
                 ]
             },
             {
-                "steps": 27499880,
-                "file_path": "results\\Obstacle0.2\\Walker\\Walker-27499880.onnx",
-                "reward": 19.52768963192581,
-                "creation_time": 1685779584.864444,
+                "steps": 46999943,
+                "file_path": "results\\Obstacle0.2\\Walker\\Walker-46999943.onnx",
+                "reward": 22.969253379471446,
+                "creation_time": 1685936359.5395927,
                 "auxillary_file_paths": [
-                    "results\\Obstacle0.2\\Walker\\Walker-27499880.pt"
+                    "results\\Obstacle0.2\\Walker\\Walker-46999943.pt"
                 ]
             },
             {
-                "steps": 27999966,
-                "file_path": "results\\Obstacle0.2\\Walker\\Walker-27999966.onnx",
-                "reward": 19.098707417647045,
-                "creation_time": 1685780118.5371473,
+                "steps": 47499918,
+                "file_path": "results\\Obstacle0.2\\Walker\\Walker-47499918.onnx",
+                "reward": 23.985196038168304,
+                "creation_time": 1685936929.9167335,
                 "auxillary_file_paths": [
-                    "results\\Obstacle0.2\\Walker\\Walker-27999966.pt"
+                    "results\\Obstacle0.2\\Walker\\Walker-47499918.pt"
                 ]
             },
             {
-                "steps": 28464103,
-                "file_path": "results\\Obstacle0.2\\Walker\\Walker-28464103.onnx",
-                "reward": 22.19276170094808,
-                "creation_time": 1685780643.7848375,
+                "steps": 47658718,
+                "file_path": "results\\Obstacle0.2\\Walker\\Walker-47658718.onnx",
+                "reward": 22.764750048021476,
+                "creation_time": 1685937177.65224,
                 "auxillary_file_paths": [
-                    "results\\Obstacle0.2\\Walker\\Walker-28464103.pt"
+                    "results\\Obstacle0.2\\Walker\\Walker-47658718.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 28464103,
+            "steps": 47658718,
             "file_path": "results\\Obstacle0.2\\Walker.onnx",
-            "reward": 22.19276170094808,
-            "creation_time": 1685780643.7848375,
+            "reward": 22.764750048021476,
+            "creation_time": 1685937177.65224,
             "auxillary_file_paths": [
-                "results\\Obstacle0.2\\Walker\\Walker-28464103.pt"
+                "results\\Obstacle0.2\\Walker\\Walker-47658718.pt"
             ]
         }
     },
