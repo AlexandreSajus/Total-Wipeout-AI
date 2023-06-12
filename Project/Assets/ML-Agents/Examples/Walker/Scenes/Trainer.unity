@@ -5090,7 +5090,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: aab2d9ded46161745bbfa1b23b709fe8,
+      objectReference: {fileID: 5022602860645237092, guid: a8fe239604b240546b64f3c9249e527a,
         type: 3}
     - target: {fileID: 7819659174506835736, guid: 84359146bf7af47e58c229d877e801d7,
         type: 3}
